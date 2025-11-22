@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATON Solar - Uštedite sa solarnim panelima</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- Aurora Effect Background -->
+    <div class="aurora-effect">
+      <div class="aurora-color"></div>
+      <div class="aurora-color"></div>
+      <div class="aurora-color"></div>
+    </div>
+    <div class="aurora-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">ATON Solar</div>
+      <h1>Plaćajte <span class="highlight">duplo manje</span> za struju</h1>
+      <p class="hero-subtitle">Uštedite do <strong>70%</strong> na računu za struju sa solarnim panelima</p>
+      <div class="hero-cta">
+        <a href="#comparison" class="hero-button">
+          <span>Saznaj više</span>
+          <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section class="comparison" id="comparison">
+    <div class="section-header">
+      <h2>Uporedi potrošnju</h2>
+      <p class="section-desc">Pogledajte razliku u troškovima sa i bez solarnih panela</p>
+    </div>
+
+    <div class="carousel-wrapper">
+      <div class="container">
+        <!-- Card: Bez panela -->
+        <div class="card card--without">
+          <div class="card-header">
+            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=600&h=400"
+                 alt="Dalekovodi - tradicionalna mreža"
+                 class="card-image"
+                 loading="lazy">
+            <div class="card-overlay card-overlay--red"></div>
+          </div>
+          <span class="card-label card-label--red">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+            15 din/kW
+          </span>
+          <div class="card-content">
+            <h2 class="card-title">Bez solarnih panela</h2>
+            <div class="card-details">
+              <ul class="consumption-list">
+                <li>
+                  <span class="item-icon">🍳</span>
+                  <span class="item-text">1 ručak (rerna)</span>
+                  <span class="item-power">3 kW</span>
+                  <span class="item-cost item-cost--red">45 din</span>
+                </li>
+                <li>
+                  <span class="item-icon">🚿</span>
+                  <span class="item-text">5 tuširanja (bojler)</span>
+                  <span class="item-power">2,8 kW</span>
+                  <span class="item-cost item-cost--red">42 din</span>
+                </li>
+                <li>
+                  <span class="item-icon">👕</span>
+                  <span class="item-text">Opran veš</span>
+                  <span class="item-power">2 kW</span>
+                  <span class="item-cost item-cost--red">30 din</span>
+                </li>
+                <li>
+                  <span class="item-icon">🍺</span>
+                  <span class="item-text">Hladno pivo (frižider)</span>
+                  <span class="item-power">2,1 kW</span>
+                  <span class="item-cost item-cost--red">31,5 din</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card-meta">
+              <div class="card-total">
+                <span>Ukupno:</span>
+                <span class="total-price total-price--red">148,5 din</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card: Sa panelima -->
+        <div class="card card--with">
+          <div class="card-header">
+            <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=600&h=400"
+                 alt="Kuća sa solarnim panelima"
+                 class="card-image"
+                 loading="lazy">
+            <div class="card-overlay card-overlay--green"></div>
+          </div>
+          <span class="card-label card-label--green">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+            3,6 din/kW
+          </span>
+          <div class="card-badge">VELIKA UŠTEDA</div>
+          <div class="card-content">
+            <h2 class="card-title">Sa solarnim panelima</h2>
+            <div class="card-details">
+              <ul class="consumption-list">
+                <li>
+                  <span class="item-icon">🍳</span>
+                  <span class="item-text">1 ručak (rerna)</span>
+                  <span class="item-power">3 kW</span>
+                  <span class="item-cost item-cost--green">11 din</span>
+                </li>
+                <li>
+                  <span class="item-icon">🚿</span>
+                  <span class="item-text">5 tuširanja (bojler)</span>
+                  <span class="item-power">2,8 kW</span>
+                  <span class="item-cost item-cost--green">10 din</span>
+                </li>
+                <li>
+                  <span class="item-icon">👕</span>
+                  <span class="item-text">Opran veš</span>
+                  <span class="item-power">2 kW</span>
+                  <span class="item-cost item-cost--green">7 din</span>
+                </li>
+                <li>
+                  <span class="item-icon">🍺</span>
+                  <span class="item-text">Hladno pivo (frižider)</span>
+                  <span class="item-power">2,1 kW</span>
+                  <span class="item-cost item-cost--green">8 din</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card-meta">
+              <div class="card-total">
+                <span>Ukupno:</span>
+                <span class="total-price total-price--green">36 din</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Indicators -->
+      <div class="carousel-indicators">
+        <button class="indicator active" data-index="0" aria-label="Kartica 1"></button>
+        <button class="indicator" data-index="1" aria-label="Kartica 2"></button>
+      </div>
+    </div>
+
+    <!-- Savings Summary -->
+    <div class="savings-summary">
+      <div class="savings-header">
+        <span class="savings-icon">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </span>
+        <h3 class="savings-title">Koliko možete uštedeti?</h3>
+      </div>
+      <div class="savings-grid">
+        <div class="savings-card">
+          <span class="savings-period">Za jedan dan</span>
+          <span class="savings-amount">112,5 din</span>
+        </div>
+        <div class="savings-card savings-card--highlight">
+          <span class="savings-period">Za mesec dana</span>
+          <span class="savings-amount">3.375 din</span>
+        </div>
+        <div class="savings-card savings-card--featured">
+          <span class="savings-period">Za godinu dana</span>
+          <span class="savings-amount">41.063 din</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wave Divider -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+    </svg>
+  </div>
+
+  <!-- Price Increase Section -->
+  <section class="price-increase">
+    <div class="price-increase-content">
+      <div class="section-header section-header--light">
+        <span class="section-label section-label--warning">Upozorenje</span>
+        <h2 class="price-increase-subtitle">Struja je mnogo poskupela</h2>
+        <p class="counter-subtitle">Od 2017. godine do danas cena struje je skočila <span class="highlight-red">43.64%</span></p>
+      </div>
+
+      <div class="counter-display">
+        <div class="counter-year">
+          <span class="counter-year-value" id="counterYear">2017</span>
+          <span class="counter-label">godina</span>
+        </div>
+        <div class="counter-percent">
+          <span class="counter-percent-value" id="counterPercent">0%</span>
+          <span class="counter-label">poskupljenje</span>
+        </div>
+      </div>
+
+      <div class="price-increase-fact">
+        <svg class="fact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+        </svg>
+        <p>Da li ste znali da potrošači u Srbiji plaćaju struju skuplje od Šveđana (4,3× veći BDP) i Norvežana (6,4× veći BDP)</p>
+      </div>
+
+     
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="section-header">
+      <span class="section-label">Iskustva</span>
+      <h2>Šta kažu ljudi koji su prešli na panele</h2>
+    </div>
+
+    <div class="testimonials-container">
+      <input type="radio" name="testimonial-slider" id="testimonial-1" checked>
+      <input type="radio" name="testimonial-slider" id="testimonial-2">
+      <input type="radio" name="testimonial-slider" id="testimonial-3">
+
+      <div class="testimonial-cards">
+        <!-- Testimonial Card 1 -->
+        <label class="testimonial-card" for="testimonial-1" id="review-1">
+          <div class="testimonial-content">
+            <div class="testimonial-text">
+              <div class="quote-icon">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+              </div>
+              <p class="testimonial-quote">"Više ne brinem o povećanju cene struje. Solarni paneli su najbolja investicija koju sam napravio."</p>
+              <h4 class="testimonial-name">Marko P.</h4>
+              <p class="testimonial-location">Beograd</p>
+            </div>
+          </div>
+        </label>
+
+        <!-- Testimonial Card 2 -->
+        <label class="testimonial-card" for="testimonial-2" id="review-2">
+          <div class="testimonial-content">
+            <div class="testimonial-text">
+              <div class="quote-icon">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+              </div>
+              <p class="testimonial-quote">"Plaćao sam 3000 dinara mesečno, sad plaćam 300. Razlika je neverovatna!"</p>
+              <h4 class="testimonial-name">Jovan S.</h4>
+              <p class="testimonial-location">Novi Sad</p>
+            </div>
+          </div>
+        </label>
+
+        <!-- Testimonial Card 3 -->
+        <label class="testimonial-card" for="testimonial-3" id="review-3">
+          <div class="testimonial-content">
+            <div class="testimonial-text">
+              <div class="quote-icon">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+              </div>
+              <p class="testimonial-quote">"Bolje da plaćam rate za panele nego rasipništvo EPS-a. Bar znam gde mi novac ide."</p>
+              <h4 class="testimonial-name">Ana M.</h4>
+              <p class="testimonial-location">Niš</p>
+            </div>
+          </div>
+        </label>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <div class="testimonial-navigation">
+        <!-- Left Arrows -->
+        <label class="testimonial-nav-arrow testimonial-nav-arrow-left" for="testimonial-3" id="testimonial-nav-left-1">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </label>
+        <label class="testimonial-nav-arrow testimonial-nav-arrow-left" for="testimonial-1" id="testimonial-nav-left-2">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </label>
+        <label class="testimonial-nav-arrow testimonial-nav-arrow-left" for="testimonial-2" id="testimonial-nav-left-3">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </label>
+
+        <!-- Right Arrows -->
+        <label class="testimonial-nav-arrow testimonial-nav-arrow-right" for="testimonial-2" id="testimonial-nav-right-1">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </label>
+        <label class="testimonial-nav-arrow testimonial-nav-arrow-right" for="testimonial-3" id="testimonial-nav-right-2">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </label>
+        <label class="testimonial-nav-arrow testimonial-nav-arrow-right" for="testimonial-1" id="testimonial-nav-right-3">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="cta-content">
+      <div class="cta-badge">Besplatna konsultacija</div>
+      <h2>Spremni za uštedu?</h2>
+      <p>Kontaktirajte nas i saznajte kako možete smanjiti račun za struju</p>
+      <a href="#" class="cta-button">
+        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+        </svg>
+        Kontaktirajte nas
+      </a>
+      <p class="cta-note">Odgovaramo u roku od 24 sata</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">ATON Solar</div>
+      <p class="footer-copy">© ATON Solar 2024. Sva prava zadržana.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile carousel functionality
+    const container = document.querySelector('.container');
+    const indicators = document.querySelectorAll('.indicator');
+
+    // Update indicators on scroll
+    container.addEventListener('scroll', () => {
+      const scrollLeft = container.scrollLeft;
+      const cardWidth = container.querySelector('.card').offsetWidth;
+      const gap = 32; // 2rem gap
+      const activeIndex = Math.round(scrollLeft / (cardWidth + gap));
+
+      indicators.forEach((indicator, index) => {
+        indicator.classList.toggle('active', index === activeIndex);
+      });
+    });
+
+    // Click on indicator to scroll to card
+    indicators.forEach((indicator, index) => {
+      indicator.addEventListener('click', () => {
+        const cardWidth = container.querySelector('.card').offsetWidth;
+        const gap = 32;
+        container.scrollTo({
+          left: index * (cardWidth + gap),
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Price increase counter animation
+    const priceData = [
+      { year: 2017, percent: 0 },
+      { year: 2018, percent: 5.2 },
+      { year: 2019, percent: 8.7 },
+      { year: 2020, percent: 12.3 },
+      { year: 2021, percent: 18.5 },
+      { year: 2022, percent: 25.8 },
+      { year: 2023, percent: 32.4 },
+      { year: 2024, percent: 38.9 },
+      { year: 2025, percent: 43.64 }
+    ];
+
+    const counterYear = document.getElementById('counterYear');
+    const counterPercent = document.getElementById('counterPercent');
+    const priceSection = document.querySelector('.price-increase');
+    let counterStarted = false;
+
+    function animateCounter() {
+      if (counterStarted) return;
+      counterStarted = true;
+
+      let index = 0;
+      const interval = setInterval(() => {
+        counterYear.textContent = priceData[index].year;
+        counterPercent.textContent = priceData[index].percent.toFixed(2).replace('.', ',') + '%';
+
+        index++;
+        if (index >= priceData.length) {
+          clearInterval(interval);
+        }
+      }, 400);
+    }
+
+    // Intersection Observer to trigger counter when section is visible
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounter();
+        }
+      });
+    }, { threshold: 0.5 });
+
+    observer.observe(priceSection);
+
+    // Smooth scroll for hero button
+    document.querySelector('.hero-button').addEventListener('click', (e) => {
+      e.preventDefault();
+      document.querySelector('#comparison').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
