@@ -175,7 +175,12 @@
         </div>
 
         <div class="slider-wrapper">
-          <input class="savings-slider" type="range" name="" value="0" min="0" max="12" onChange="updateSavings(this.value)" onmousemove="updateSavings(this.value)">
+          <div class="slider-hint">
+            <span class="slider-hint-arrow">←</span>
+            <span>Prevuci me da vidiš godišnju uštedu!</span>
+            <span class="slider-hint-arrow">→</span>
+          </div>
+          <input class="savings-slider" type="range" name="" value="0" min="0" max="12" oninput="updateSavings(this.value)">
           <div class="slider-labels">
             <span>1d</span>
             <span>2d</span>
