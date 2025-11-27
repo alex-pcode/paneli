@@ -167,19 +167,33 @@
         </span>
         <h3 class="savings-title">Koliko možete uštedeti?</h3>
       </div>
-      <div class="savings-grid">
-        <div class="savings-card">
-          <span class="savings-period">Za jedan dan</span>
-          <span class="savings-amount">112,5 din</span>
+
+      <div class="savings-slider-container">
+        <div class="savings-amount-display">
+          <span class="savings-amount" id="savingsAmount">112,5 din</span>
+          <span class="savings-period" id="savingsPeriod">Za 1 dan</span>
         </div>
-        <div class="savings-card savings-card--highlight">
-          <span class="savings-period">Za mesec dana</span>
-          <span class="savings-amount">3.375 din</span>
+
+        <div class="slider-wrapper">
+          <input class="savings-slider" type="range" name="" value="0" min="0" max="12" onChange="updateSavings(this.value)" onmousemove="updateSavings(this.value)">
+          <div class="slider-labels">
+            <span>1d</span>
+            <span>2d</span>
+            <span>3d</span>
+            <span>5d</span>
+            <span>7d</span>
+            <span>2n</span>
+            <span>1m</span>
+            <span>2m</span>
+            <span>3m</span>
+            <span>4m</span>
+            <span>6m</span>
+            <span>9m</span>
+            <span>1g</span>
+          </div>
         </div>
-        <div class="savings-card savings-card--featured">
-          <span class="savings-period">Za godinu dana</span>
-          <span class="savings-amount">41.063 din</span>
-        </div>
+
+        <div class="savings-message" id="savingsMessage">Dovoljno za jedan lep hleb</div>
       </div>
     </div>
   </section>
@@ -348,6 +362,32 @@
   </footer>
 
   <script>
+    // Savings slider functionality
+    function updateSavings(value) {
+      const sliderData = [
+        { days: 1, amount: '112,5 din', period: 'Za 1 dan', message: 'Dovoljno za jedan lep hleb' },
+        { days: 2, amount: '225 din', period: 'Za 2 dana', message: 'Kilo banana 🍌' },
+        { days: 3, amount: '337,5 din', period: 'Za 3 dana', message: 'Burek i jogurt' },
+        { days: 5, amount: '562,5 din', period: 'Za 5 dana', message: 'Pola kg domaćeg sira' },
+        { days: 7, amount: '787,5 din', period: 'Za nedelju dana', message: 'Mesečna pretplata za streaming servis' },
+        { days: 14, amount: '1.575 din', period: 'Za 2 nedelje', message: 'Bioskop i kokice za dvoje' },
+        { days: 30, amount: '3.375 din', period: 'Za mesec dana', message: 'Mesečna članarina u teretani' },
+        { days: 60, amount: '6.750 din', period: 'Za 2 meseca', message: 'Nova zimska jakna ili cipele' },
+        { days: 90, amount: '10.125 din', period: 'Za 3 meseca', message: 'Pun rezervoar goriva' },
+        { days: 120, amount: '13.500 din', period: 'Za 4 meseca', message: 'Mali servis' },
+        { days: 180, amount: '20.250 din', period: 'Za 6 meseci', message: 'Lepo vikend putovanje' },
+        { days: 270, amount: '30.375 din', period: 'Za 9 meseci', message: 'Registracija za auto' },
+        { days: 365, amount: '41.063 din', period: 'Za godinu dana', message: 'Avionska karta ✈️' }
+      ];
+
+      const index = parseInt(value);
+      const data = sliderData[index];
+
+      document.getElementById('savingsAmount').innerHTML = data.amount;
+      document.getElementById('savingsPeriod').innerHTML = data.period;
+      document.getElementById('savingsMessage').innerHTML = data.message;
+    }
+
     // Mobile carousel functionality
     const container = document.querySelector('.container');
     const indicators = document.querySelectorAll('.indicator');
